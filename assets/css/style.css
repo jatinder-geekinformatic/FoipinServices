@@ -1,0 +1,18 @@
+*{margin:0;padding:0;}*
+ul.message-list.faxMessage li .title {
+    left: 15px;
+}
+a.subject.pageWrapper {
+    display: flex;
+}
+a.subject.pageWrapper .date {
+    position: initial;
+    padding: 0;
+    width: auto;
+}
+.date.actionBtnWrapper {
+    padding-left: 50px !important;
+}
+.actionBtnWrapper a.dropdown-item {
+    line-height: 22px;
+}
