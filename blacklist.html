@@ -256,9 +256,6 @@
                                         <i data-feather="briefcase"></i></i><span data-key="t-dashboards">Inbox</span>
                                     </a>
                                 </li>
-
-
-
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle arrow-none" href="#" id="topnav-pages" role="button">
                                         <i data-feather="grid"></i><span data-key="t-apps">Billning</span> <div class="arrow-down"></div>
@@ -299,7 +296,7 @@
                       <div class="row">
                           <div class="col-12">
                             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                            <h4 class="mb-sm-0 main_heading">Compose</h4>
+                            <h4 class="mb-sm-0 main_heading">Fax Cover</h4>
 
                             <div class="page-title-right">
                               <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
@@ -308,8 +305,6 @@
 
                                 <input type="radio" class="btn-check" name="btnradio" id="btnradio5" autocomplete="on" checked>
                                 <a href="inbox.html" class="btn btn-outline-success" for="btnradio5">Inbox View</a>
-
-
                               </div>
                             </div>
 
@@ -322,7 +317,7 @@
                           <div class="col-12">
                               <!-- Left sidebar -->
                               <div class="email-leftbar card">
-                                  <a href="compose.html" class="active compose_link">  <button type="button" class="btn btn-danger w-100 waves-effect waves-light" data-bs-toggle="modal" data-bs-target="#composemodal">
+                                  <a href="compose.html" class="compose_link">  <button type="button" class="btn btn-danger w-100 waves-effect waves-light" data-bs-toggle="modal" data-bs-target="#composemodal">
                                   Compose
                                   </button></a>
                                   <div class="mail-list mt-4">
@@ -336,15 +331,14 @@
                                   </div>
 
                                     <h6 class="mt-4">Settings</h6>
-                                  <div class="mail-list mt-2">
-
-                                      <ul  class="mail-sub">
-                                        <a href="faxcover.html"><i class="mdi mdi mdi-file-outline me-2"></i>Fax Covers</a>
-                                        <a href="alert.html"><i class="mdi mdi mdi-alert-outline me-2"></i>Fax Alerts</a>
-                                        <a href="faxheader.html"><i class="mdi mdi mdi-file-outline me-2"></i>Fax Headers</a>
-                                        <a href="blacklist.html"><i class="fa fa-ban me-2" aria-hidden="true"></i>Fax Blacklist</a>
-                                      </ul>
-                                  </div>
+                                    <div class="mail-list mt-2">
+                                        <ul class="mail-sub">
+                                            <a href="faxcover.html"><i class="mdi mdi mdi-file-outline me-2"></i>Fax Covers</a>
+                                            <a href="alert.html"><i class="mdi mdi mdi-alert-outline me-2"></i>Fax Alerts</a>
+                                            <a href="faxheader.html"><i class="mdi mdi mdi-file-outline me-2"></i>Fax Headers</a>
+                                            <a href="blacklist.html"><i class="fa fa-ban me-2" aria-hidden="true"></i>Fax Blacklist</a>
+                                        </ul>
+                                    </div>
 
                               </div>
                               <!-- End Left sidebar -->
@@ -393,142 +387,57 @@
                                               </div>
                                           </div> -->
                                           <div class="right-side-btns">
-                                            <div class="btn-group">
+                                                <div class="btn-group">
                                                     <button type="button" class="btn btn-primary waves-light waves-effect ">
-                                                        Attach <i class="fa fa-paperclip" aria-hidden="true"></i> 
+                                                        Save  
                                                     </button>
-                                            </div>
-                                            <div class="btn-group">
-                                                    <button type="button" class="btn btn-primary waves-light waves-effect ">
-                                                        Send  
-                                                        <i class="mdi mdi-send ms-2"></i>
-                                                    </button>
-                                            </div>
-                                        </div>
-                                    </div>
+                                                </div>
+                                         </div>
+                                      </div>
+
                                       <div class="card-body">
-                                          <div class="d-flex align-items-center mb-4">
-                                              <div class="flex-shrink-0 me-3">
-                                                  <img class="rounded-circle avatar-sm" src="assets/images/users/avatar-2.jpg" alt="Generic placeholder image">
-                                              </div>
-                                              <div class="flex-grow-1">
-                                                  <h5 class="font-size-14 mb-0">Humberto D. Champion</h5>
-                                                  <small class="text-muted">support@domain.com</small>
-                                              </div>
-                                          </div>
                                           <div class="row">
                                             <div class="col-md-6">
                                                 <div class="mb-3">
-                                                    <label for="example-text-input" class="form-label">Fax Number</label>
-                                                    <input class="form-control" type="text" placeholder="Enter Fax Number">
+                                                    <label for="example-text-input" class="form-label">Blacklist Name</label>
+                                                    <input class="form-control" type="text" placeholder="Enter Blacklist Name">
                                                 </div>
                                             </div>
                                             <div class="col-md-6">
                                                 <div class="mb-3">
-                                                    <label for="example-text-input" class="form-label">Select Header</label>
-                                                    <input class="form-control" type="text" placeholder="Enter Fax Number">
+                                                    <label for="example-text-input" class="form-label">Blacklist Number</label>
+                                                    <input class="form-control" type="text" placeholder="Enter Blacklist Number">
                                                 </div>
                                             </div>
                                           </div>
                                           <div class="row">
-                                            <div class="col-md-6">
-                                                <div class="mb-3">
-                                                    <label for="example-date-input" class="form-label">Date</label>
-                                                    <input class="form-control" type="date" placeholder="YYYY-MM-DD" id="example-date-input">
-                                                </div>
-                                              </div>
-                                            <div class="col-md-6">
-                                                <div class="mb-3">
-                                                    <label for="example-date-input" class="form-label">Select Alert</label>
-                                                    <select class="form-select">
-                                                        <option>Fax Email</option>
-                                                        <option>Fax Message</option>
-                                                      </select>
-                                                  </div>
-                                            </div>
-                                          </div>
-                                          <!-- <div class="row">
                                             <div class="col-md-12">
                                                 <div class="text-fax">
                                                     <div class="mb-3">
-                                                        <label for="example-text-input" class="form-label">Fax Description</label>
-                                                        <textarea class="form-control" type="text" placeholder="Fax type here..." ></textarea>
+                                                        <label for="example-text-input" class="form-label">Modified field</label>
+                                                        <input class="form-control" type="text" placeholder="YYYY-MM-DD-TIME">
                                                       </div>
                                                 </div>
                                             </div>
-                                          </div> -->
-                                          <div class="row">
-                                              <div class="col-12">
-                                                  <div class="card">
-                                                      <div class="card-header">
-                                                          <h4 class="card-title">Dropzone</h4>
-                                                          <p class="card-title-desc">DropzoneJS is an open source library
-                                                              that provides drag’n’drop file uploads with image previews.
-                                                          </p>
-                                                      </div>
-                                                      <div class="card-body">
-
-                                                          <div>
-                                                              <form action="#" class="dropzone">
-                                                                  <div class="fallback">
-                                                                      <input name="file" type="file" multiple="multiple">
-                                                                  </div>
-                                                                  <div class="dz-message needsclick">
-                                                                      <div class="mb-3">
-                                                                          <i class="display-4 text-muted bx bx-cloud-upload"></i>
-                                                                      </div>
-
-                                                                      <h5>Drop files here or click to upload.</h5>
-                                                                  </div>
-                                                              </form>
-                                                          </div>
-                                                          <div class="d-flex justify-content-between mt-4">
-                                                              <div class="text-center ">
-                                                                  <button type="button" class="btn btn-primary waves-effect waves-light">Send
-                                                                      Files</button>
-                                                                    </div>
-                                                                <div class="right-side-btns">
-                                                                        <div class="btn-group">
-                                                                                <button type="button" class="btn btn-primary waves-light waves-effect ">
-                                                                                    Attach <i class="fa fa-paperclip" aria-hidden="true"></i> 
-                                                                                </button>
-                                                                        </div>
-                                                                        <div class="btn-group">
-                                                                                <button type="button" class="btn btn-primary waves-light waves-effect ">
-                                                                                    Send  
-                                                                                    <i class="mdi mdi-send ms-2"></i>
-                                                                                </button>
-                                                                        </div>
-                                                                </div>
-                                                            </div>
-                                                      </div>
-                                                  </div>
-                                              </div> <!-- end col -->
-                                          </div> <!-- end row -->
-
-
-
-                                          <div class="row">
-                                              <div class="col-xl-2 col-6">
-                                                  <div class="card">
-                                                      <img class="card-img-top img-fluid" src="assets/images/small/img-3.jpg" alt="Card image cap">
-                                                      <div class="py-2 text-center">
-                                                          <a download="img-3.jpg" href="assets/images/small/img-3.jpg" class="fw-medium">Download</a>
-                                                      </div>
-                                                  </div>
-                                              </div>
-                                              <div class="col-xl-2 col-6">
-                                                  <div class="card">
-                                                      <img class="card-img-top img-fluid" src="assets/images/small/img-4.jpg" alt="Card image cap">
-                                                      <div class="py-2 text-center">
-                                                          <a download="img-4.jpg" href="assets/images/small/img-4.jpg" class="fw-medium">Download</a>
-                                                      </div>
-                                                  </div>
-                                              </div>
                                           </div>
-                                          <a href="javascript: void(0);" class="btn btn-secondary waves-effect mt-4"><i class="mdi mdi-reply me-1"></i> Reply</a>
+                                          <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="text-fax">
+                                                    <div class="mb-3">
+                                                        <label for="example-text-input" class="form-label">Blacklist Description</label>
+                                                        <textarea class="form-control" type="text" placeholder="Blacklist Description" ></textarea>
+                                                      </div>
+                                                </div>
+                                            </div>
+                                          </div>
+                                          <div class="right-side-btns d-flex justify-content-end">
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-primary waves-light waves-effect">
+                                                    Save  
+                                                </button>
+                                            </div>
+                                     </div>
                                       </div>
-
                                   </div>
                               </div>
                               <!-- card -->

@@ -1,6 +1,9 @@
 *{margin:0;padding:0;}*
 ul.message-list.faxMessage li .title {
-    left: 15px;
+    left: 80px;
+    padding: 0 40px 0 20px;
+    display: flex;
+    justify-content: space-between;
 }
 a.subject.pageWrapper {
     display: flex;
@@ -16,3 +19,37 @@ a.subject.pageWrapper .date {
 .actionBtnWrapper a.dropdown-item {
     line-height: 22px;
 }
+.message-list li .col-mail-1 {
+    width: 500px;
+}
+.message-list li .col-mail-2 {
+    left: 500px;
+}
+.message-list li .col-mail-1 a.title span.senderName {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+/* Outbox CSS Start */
+.outbox-wrapper .message-list li .col-mail-1 a.title span.senderName {
+    max-width: 150px;
+    min-width: 150px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.outbox-wrapper .message-list li .col-mail-1 a.title span.senderName:hover {
+    overflow: initial;
+}
+/* Outbox CSS End */
+/* Compose Section CSS Start */
+.compose-section .dz-message.needsclick {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.text-fax textarea.form-control {
+    height: 150px;
+    resize: inherit;
+}
+/* Compose Section CSS End */

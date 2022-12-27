@@ -37,7 +37,7 @@
 <body data-layout="horizontal">
 
     <!-- Begin page -->
-    <div id="layout-wrapper">
+    <div id="layout-wrapper" class="outbox-wrapper">
 
         <header id="page-topbar">
             <div class="navbar-header">
@@ -328,7 +328,7 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                <h4 class="mb-sm-0 main_heading">Fax Inbox</h4>
+                                <h4 class="mb-sm-0 main_heading">Fax Trash</h4>
 
                                 <div class="page-title-right">
                                     <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
@@ -338,7 +338,7 @@
 
                                         <input type="radio" class="btn-check" name="btnradio" id="btnradio5"
                                             autocomplete="on" checked>
-                                        <a href="inbox.html" class="btn btn-outline-success" for="btnradio5">Inbox
+                                        <a href="outbox.html" class="btn btn-outline-success" for="btnradio5">Outbox
                                             View</a>
                                     </div>
                                 </div>
@@ -366,13 +366,13 @@
                                         Compose
                                     </button></a>
                                 <div class="mail-list mt-4">
-                                    <a href="#" class="active"><i class="mdi mdi-email-outline me-2"></i> Inbox <span
+                                    <a href="inbox.html"><i class="mdi mdi-email-outline me-2"></i> Inbox <span
                                             class="ms-1 float-end">(18)</span></a>
                                     <ul class="mail-sub">
                                         <a href="outbox.html"><i class="mdi mdi-email-check-outline me-2"></i>Oubox</a>
                                         <a href="important.html"><i class="fa fa-exclamation-circle me-2"></i>Important</a>
                                         <a href="sentbox.html"><i class="mdi mdi-email-send-outline me-2"></i>Sent Faxes</a>
-                                        <a href="trash.html"><i class="mdi mdi-trash-can-outline me-2"></i>Trash</a>
+                                        <a class="active" href="trash.html"><i class="mdi mdi-trash-can-outline me-2"></i>Trash</a>
                                     </ul>
                                 </div>
                                 <h6 class="mt-4">Settings</h6>
@@ -384,7 +384,6 @@
                                         <a href="blacklist.html"><i class="fa fa-ban me-2" aria-hidden="true"></i>Fax Blacklist</a>
                                     </ul>
                                 </div>
-
                             </div>
 
                             <!-- End Left sidebar -->
@@ -464,11 +463,10 @@
                                                         <input type="checkbox" id="chk19">
                                                         <label for="chk19" class="toggle"></label> 
                                                 </div>
-                                                <span class="star-toggle far fa-star"></span>
-                                                <a href="read-mail.html" class="title ">
-                                                    
-                                                    <span class="senderName">Peter</span>
-                                                    <span class="ms-2"> <i class="mdi mdi-fax me-1"></i>555-123-4567</span>
+                                                <i class="mdi mdi-trash-can-outline me-2"></i>
+                                                <a href="read-mail.html" class="title "> 
+                                                    <span class="senderName">To:-333-123-4567</span>
+                                                    <span class="ms-2"> <i class="mdi mdi-fax me-1"></i>From:- 555-123-4567</span>
                                                 </a>
                                             </div>
                                             <div class="col-mail col-mail-2">
@@ -486,10 +484,10 @@
                                                     <input type="checkbox" id="chk20">
                                                     <label for="chk20" class="toggle"></label> 
                                             </div>
-                                            <span class="star-toggle far fa-star"></span>
+                                            <i class="mdi mdi-trash-can-outline me-2"></i>
                                                 <a href="read-mail.html" class="title">
-                                                    <span class="senderName">Susanna </span>
-                                                    <span class="ms-2"> <i class="mdi mdi-fax me-1"></i>555-123-4567</span>
+                                                    <span class="senderName">To:-333-123-4567 </span>
+                                                    <span class="ms-2"> <i class="mdi mdi-fax me-1"></i>From:- 555-123-4567</span>
                                                 </a>
                                             </div>
                                             <div class="col-mail col-mail-2">
@@ -507,11 +505,11 @@
                                                     <input type="checkbox" id="chk21">
                                                     <label for="chk21" class="toggle"></label> 
                                             </div>
-                                            <span class="star-toggle far fa-star"></span>
-                                                <a href="read-mail.html" class="title">
-                                                    <span class="senderName">Web Support Dennis</span>
-                                                    <span class="ms-2"> <i class="mdi mdi-fax me-1"></i>555-123-4567</span>
-                                                </a>
+                                            <i class="mdi mdi-trash-can-outline me-2"></i>
+                                            <a href="read-mail.html" class="title">
+                                                <span class="senderName">To:-333-123-4567 </span>
+                                                <span class="ms-2"> <i class="mdi mdi-fax me-1"></i>From:- 555-123-4567</span>
+                                            </a>
                                             </div>
                                             <div class="col-mail col-mail-2">
                                                 <a href="#" class="subject pageWrapper">Pages (1-3)
@@ -528,11 +526,11 @@
                                                     <input type="checkbox" id="chk22">
                                                     <label for="chk22" class="toggle"></label> 
                                             </div>
-                                            <span class="star-toggle far fa-star"></span>
-                                                <a href="read-mail.html" class="title">
-                                                    <span class="senderName">Web Support Dennis</span>
-                                                    <span class="ms-2"> <i class="mdi mdi-fax me-1"></i>555-123-4567</span>
-                                                </a>
+                                            <i class="mdi mdi-trash-can-outline me-2"></i>
+                                            <a href="read-mail.html" class="title">
+                                                <span class="senderName">To:-333-123-4567 </span>
+                                                <span class="ms-2"> <i class="mdi mdi-fax me-1"></i>From:- 555-123-4567</span>
+                                            </a>
                                             </div>
                                             <div class="col-mail col-mail-2">
                                                 <a href="#" class="subject pageWrapper">Pages (1-3)
@@ -547,11 +545,11 @@
                                                 <div class="checkbox-wrapper-mail">
                                                     <input type="checkbox" id="chk22">
                                                     <label for="chk22" class="toggle"></label> 
-                                            </div>
-                                            <span class="star-toggle far fa-star"></span>
+                                                </div>
+                                                <i class="mdi mdi-trash-can-outline me-2"></i>
                                                 <a href="read-mail.html" class="title">
-                                                    <span class="senderName">Web Support Dennis</span>
-                                                    <span class="ms-2"> <i class="mdi mdi-fax me-1"></i>555-123-4567</span>
+                                                    <span class="senderName">To:-333-123-4567 </span>
+                                                    <span class="ms-2"> <i class="mdi mdi-fax me-1"></i>From:- 555-123-4567</span>
                                                 </a>
                                             </div>
                                             <div class="col-mail col-mail-2">
@@ -568,10 +566,10 @@
                                                     <input type="checkbox" id="chk24">
                                                     <label for="chk24" class="toggle"></label> 
                                             </div>
-                                            <span class="star-toggle far fa-star"></span>
+                                            <i class="mdi mdi-trash-can-outline me-2"></i>
                                                 <a href="read-mail.html" class="title">
-                                                    <span class="senderName">Web Support Dennis</span>
-                                                    <span class="ms-2"> <i class="mdi mdi-fax me-1"></i>555-123-4567</span>
+                                                    <span class="senderName">To:-333-123-4567 </span>
+                                                    <span class="ms-2"> <i class="mdi mdi-fax me-1"></i>From:- 555-123-4567</span>
                                                 </a>
                                             </div>
                                             <div class="col-mail col-mail-2">
@@ -588,11 +586,11 @@
                                                     <input type="checkbox" id="chk25">
                                                     <label for="chk25" class="toggle"></label> 
                                             </div>
-                                            <span class="star-toggle far fa-star"></span>
-                                                <a href="read-mail.html" class="title">
-                                                    <span class="senderName">Web Support Dennis</span>
-                                                    <span class="ms-2"> <i class="mdi mdi-fax me-1"></i>555-123-4567</span>
-                                                </a>
+                                            <i class="mdi mdi-trash-can-outline me-2"></i>
+                                            <a href="read-mail.html" class="title">
+                                                <span class="senderName">To:-333-123-4567 </span>
+                                                <span class="ms-2"> <i class="mdi mdi-fax me-1"></i>From:- 555-123-4567</span>
+                                            </a>
                                             </div>
                                             <div class="col-mail col-mail-2">
                                                 <a href="#" class="subject pageWrapper">Pages (1-3)
@@ -608,11 +606,11 @@
                                                     <input type="checkbox" id="chk26">
                                                     <label for="chk26" class="toggle"></label> 
                                             </div>
-                                            <span class="star-toggle far fa-star"></span>
-                                                <a href="read-mail.html" class="title">
-                                                    <span class="senderName">Web Support Dennis</span>
-                                                    <span class="ms-2"> <i class="mdi mdi-fax me-1"></i>555-123-4567</span>
-                                                </a>
+                                            <i class="mdi mdi-trash-can-outline me-2"></i>
+                                            <a href="read-mail.html" class="title">
+                                                <span class="senderName">To:-333-123-4567 </span>
+                                                <span class="ms-2"> <i class="mdi mdi-fax me-1"></i>From:- 555-123-4567</span>
+                                            </a>
                                             </div>
                                             <div class="col-mail col-mail-2">
                                                 <a href="#" class="subject pageWrapper">Pages (1-3)
@@ -628,11 +626,11 @@
                                                     <input type="checkbox" id="chk27">
                                                     <label for="chk27" class="toggle"></label> 
                                             </div>
-                                            <span class="star-toggle far fa-star"></span>
-                                                <a href="read-mail.html" class="title">
-                                                    <span class="senderName">Web Support Dennis</span>
-                                                    <span class="ms-2"> <i class="mdi mdi-fax me-1"></i>555-123-4567</span>
-                                                </a>
+                                            <i class="mdi mdi-trash-can-outline me-2"></i>
+                                            <a href="read-mail.html" class="title">
+                                                <span class="senderName">To:-333-123-4567 </span>
+                                                <span class="ms-2"> <i class="mdi mdi-fax me-1"></i>From:- 555-123-4567</span>
+                                            </a>
                                             </div>
                                             <div class="col-mail col-mail-2">
                                                 <a href="#" class="subject pageWrapper">Pages (1-3)
@@ -648,11 +646,11 @@
                                                     <input type="checkbox" id="chk28">
                                                     <label for="chk28" class="toggle"></label> 
                                             </div>
-                                            <span class="star-toggle far fa-star"></span>
-                                                <a href="read-mail.html" class="title">
-                                                    <span class="senderName">Web Support Dennis</span>
-                                                    <span class="ms-2"> <i class="mdi mdi-fax me-1"></i>555-123-4567</span>
-                                                </a>
+                                            <i class="mdi mdi-trash-can-outline me-2"></i>
+                                            <a href="read-mail.html" class="title">
+                                                <span class="senderName">To:-333-123-4567 </span>
+                                                <span class="ms-2"> <i class="mdi mdi-fax me-1"></i>From:- 555-123-4567</span>
+                                            </a>
                                             </div>
                                             <div class="col-mail col-mail-2">
                                                 <a href="#" class="subject pageWrapper">Pages (1-3)
@@ -668,11 +666,11 @@
                                                     <input type="checkbox" id="chk29">
                                                     <label for="chk29" class="toggle"></label> 
                                             </div>
-                                            <span class="star-toggle far fa-star"></span>
-                                                <a href="read-mail.html" class="title">
-                                                    <span class="senderName">Web Support Dennis</span>
-                                                    <span class="ms-2"> <i class="mdi mdi-fax me-1"></i>555-123-4567</span>
-                                                </a>
+                                            <i class="mdi mdi-trash-can-outline me-2"></i>
+                                            <a href="read-mail.html" class="title">
+                                                <span class="senderName">To:-333-123-4567 </span>
+                                                <span class="ms-2"> <i class="mdi mdi-fax me-1"></i>From:- 555-123-4567</span>
+                                            </a>
                                             </div>
                                             <div class="col-mail col-mail-2">
                                                 <a href="#" class="subject pageWrapper">Pages (1-3)
@@ -688,11 +686,11 @@
                                                     <input type="checkbox" id="chk30">
                                                     <label for="chk30" class="toggle"></label> 
                                             </div>
-                                            <span class="star-toggle far fa-star"></span>
-                                                <a href="read-mail.html" class="title">
-                                                    <span class="senderName">Web Support Dennis</span>
-                                                    <span class="ms-2"> <i class="mdi mdi-fax me-1"></i>555-123-4567</span>
-                                                </a>
+                                            <i class="mdi mdi-trash-can-outline me-2"></i>
+                                            <a href="read-mail.html" class="title">
+                                                <span class="senderName">To:-333-123-4567 </span>
+                                                <span class="ms-2"> <i class="mdi mdi-fax me-1"></i>From:- 555-123-4567</span>
+                                            </a>
                                             </div>
                                             <div class="col-mail col-mail-2">
                                                 <a href="#" class="subject pageWrapper">Pages (1-3)
@@ -708,11 +706,11 @@
                                                     <input type="checkbox" id="chk31">
                                                     <label for="chk31" class="toggle"></label> 
                                             </div>
-                                            <span class="star-toggle far fa-star"></span>
-                                                <a href="read-mail.html" class="title">
-                                                    <span class="senderName">Web Support Dennis</span>
-                                                    <span class="ms-2"> <i class="mdi mdi-fax me-1"></i>555-123-4567</span>
-                                                </a>
+                                            <i class="mdi mdi-trash-can-outline me-2"></i>
+                                            <a href="read-mail.html" class="title">
+                                                <span class="senderName">To:-333-123-4567 </span>
+                                                <span class="ms-2"> <i class="mdi mdi-fax me-1"></i>From:- 555-123-4567</span>
+                                            </a>
                                             </div>
                                             <div class="col-mail col-mail-2">
                                                 <a href="#" class="subject pageWrapper">Pages (1-3)
@@ -728,11 +726,11 @@
                                                     <input type="checkbox" id="chk32">
                                                     <label for="chk32" class="toggle"></label> 
                                             </div>
-                                            <span class="star-toggle far fa-star"></span>
-                                                <a href="read-mail.html" class="title">
-                                                    <span class="senderName">Web Support Dennis</span>
-                                                    <span class="ms-2"> <i class="mdi mdi-fax me-1"></i>555-123-4567</span>
-                                                </a>
+                                            <i class="mdi mdi-trash-can-outline me-2"></i>
+                                            <a href="read-mail.html" class="title">
+                                                <span class="senderName">To:-333-123-4567 </span>
+                                                <span class="ms-2"> <i class="mdi mdi-fax me-1"></i>From:- 555-123-4567</span>
+                                            </a>
                                             </div>
                                             <div class="col-mail col-mail-2">
                                                 <a href="#" class="subject pageWrapper">Pages (1-3)
@@ -748,11 +746,11 @@
                                                     <input type="checkbox" id="chk33">
                                                     <label for="chk33" class="toggle"></label> 
                                             </div>
-                                            <span class="star-toggle far fa-star"></span>
-                                                <a href="read-mail.html" class="title">
-                                                    <span class="senderName">Web Support Dennis</span>
-                                                    <span class="ms-2"> <i class="mdi mdi-fax me-1"></i>555-123-4567</span>
-                                                </a>
+                                            <i class="mdi mdi-trash-can-outline me-2"></i>
+                                            <a href="read-mail.html" class="title">
+                                                <span class="senderName">To:-333-123-4567 </span>
+                                                <span class="ms-2"> <i class="mdi mdi-fax me-1"></i>From:- 555-123-4567</span>
+                                            </a>
                                             </div>
                                             <div class="col-mail col-mail-2">
                                                 <a href="#" class="subject pageWrapper">Pages (1-3)
@@ -768,11 +766,11 @@
                                                     <input type="checkbox" id="chk34">
                                                     <label for="chk34" class="toggle"></label> 
                                             </div>
-                                            <span class="star-toggle far fa-star"></span>
-                                                <a href="read-mail.html" class="title">
-                                                    <span class="senderName">Web Support Dennis</span>
-                                                    <span class="ms-2"> <i class="mdi mdi-fax me-1"></i>555-123-4567</span>
-                                                </a>
+                                            <i class="mdi mdi-trash-can-outline me-2"></i>
+                                            <a href="read-mail.html" class="title">
+                                                <span class="senderName">To:-333-123-4567 </span>
+                                                <span class="ms-2"> <i class="mdi mdi-fax me-1"></i>From:- 555-123-4567</span>
+                                            </a>
                                             </div>
                                             <div class="col-mail col-mail-2">
                                                 <a href="#" class="subject pageWrapper">Pages (1-3)
@@ -788,11 +786,11 @@
                                                     <input type="checkbox" id="chk35">
                                                     <label for="chk35" class="toggle"></label> 
                                             </div>
-                                            <span class="star-toggle far fa-star"></span>
-                                                <a href="read-mail.html" class="title">
-                                                    <span class="senderName">Web Support Dennis</span>
-                                                    <span class="ms-2"> <i class="mdi mdi-fax me-1"></i>555-123-4567</span>
-                                                </a>
+                                            <i class="mdi mdi-trash-can-outline me-2"></i>
+                                            <a href="read-mail.html" class="title">
+                                                <span class="senderName">To:-333-123-4567 </span>
+                                                <span class="ms-2"> <i class="mdi mdi-fax me-1"></i>From:- 555-123-4567</span>
+                                            </a>
                                             </div>
                                             <div class="col-mail col-mail-2">
                                                 <a href="#" class="subject pageWrapper">Pages (1-3)
@@ -809,11 +807,11 @@
                                                     <input type="checkbox" id="chk36">
                                                     <label for="chk36" class="toggle"></label> 
                                             </div>
-                                            <span class="star-toggle far fa-star"></span>
-                                                <a href="read-mail.html" class="title">
-                                                    <span class="senderName">Web Support Dennis</span>
-                                                    <span class="ms-2"> <i class="mdi mdi-fax me-1"></i>555-123-4567</span>
-                                                </a>
+                                            <i class="mdi mdi-trash-can-outline me-2"></i>
+                                            <a href="read-mail.html" class="title">
+                                                <span class="senderName">To:-333-123-4567 </span>
+                                                <span class="ms-2"> <i class="mdi mdi-fax me-1"></i>From:- 555-123-4567</span>
+                                            </a>
                                             </div>
                                             <div class="col-mail col-mail-2">
                                                 <a href="#" class="subject pageWrapper">Pages (1-3)
@@ -824,11 +822,7 @@
                                             </div>
                                         </li>
                                     </ul>
-
                                 </div> <!-- card -->
-
-
-
                                 <div class="row">
                                     <div class="col-7">
                                         Showing 1 - 20 of 1,524

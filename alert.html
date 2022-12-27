@@ -299,7 +299,7 @@
                       <div class="row">
                           <div class="col-12">
                             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                            <h4 class="mb-sm-0 main_heading">Compose</h4>
+                            <h4 class="mb-sm-0 main_heading">Fax Cover</h4>
 
                             <div class="page-title-right">
                               <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
@@ -308,8 +308,6 @@
 
                                 <input type="radio" class="btn-check" name="btnradio" id="btnradio5" autocomplete="on" checked>
                                 <a href="inbox.html" class="btn btn-outline-success" for="btnradio5">Inbox View</a>
-
-
                               </div>
                             </div>
 
@@ -322,16 +320,15 @@
                           <div class="col-12">
                               <!-- Left sidebar -->
                               <div class="email-leftbar card">
-                                  <a href="compose.html" class="active compose_link">  <button type="button" class="btn btn-danger w-100 waves-effect waves-light" data-bs-toggle="modal" data-bs-target="#composemodal">
+                                  <a href="compose.html" class="compose_link">  <button type="button" class="btn btn-danger w-100 waves-effect waves-light" data-bs-toggle="modal" data-bs-target="#composemodal">
                                   Compose
                                   </button></a>
                                   <div class="mail-list mt-4">
                                       <a href="inbox.html"><i class="mdi mdi-email-outline me-2"></i> Inbox <span class="ms-1 float-end">(18)</span></a>
                                       <ul  class="mail-sub">
-                                        <a href="outbox.html"><i class="mdi mdi-email-check-outline me-2"></i>Oubox</a>
-                                        <a href="important.html"><i class="fa fa-exclamation-circle me-2"></i>Important</a>
-                                        <a href="sentbox.html"><i class="mdi mdi-email-send-outline me-2"></i>Sent Faxes</a>
-                                        <a href="trash.html"><i class="mdi mdi-trash-can-outline me-2"></i>Trash</a>
+                                        <a href="#"> <li>Delivered</li></a>
+                                        <a href="#"> <li>Failed</li></a>
+                                        <a href="#"> <li>Scheduled</li></a>
                                       </ul>
                                   </div>
 
@@ -339,8 +336,8 @@
                                   <div class="mail-list mt-2">
 
                                       <ul  class="mail-sub">
-                                        <a href="faxcover.html"><i class="mdi mdi mdi-file-outline me-2"></i>Fax Covers</a>
-                                        <a href="alert.html"><i class="mdi mdi mdi-alert-outline me-2"></i>Fax Alerts</a>
+                                        <a  href="faxcover.html"><i class="mdi mdi mdi-file-outline me-2"></i>Fax Covers</a>
+                                        <a class="active" href="alert.html"><i class="mdi mdi mdi-alert-outline me-2"></i>Fax Alerts</a>
                                         <a href="faxheader.html"><i class="mdi mdi mdi-file-outline me-2"></i>Fax Headers</a>
                                         <a href="blacklist.html"><i class="fa fa-ban me-2" aria-hidden="true"></i>Fax Blacklist</a>
                                       </ul>
@@ -392,20 +389,21 @@
                                                   <a class="dropdown-item" href="#">Mute</a>
                                               </div>
                                           </div> -->
-                                          <div class="right-side-btns">
-                                            <div class="btn-group">
+                                            <div class="right-side-btns">
+                                                <!-- <div class="btn-group">
+                                                        <button type="button" class="btn btn-primary waves-light waves-effect ">
+                                                            Attach <i class="fa fa-paperclip" aria-hidden="true"></i> 
+                                                        </button>
+                                                </div> -->
+                                                <div class="btn-group">
                                                     <button type="button" class="btn btn-primary waves-light waves-effect ">
-                                                        Attach <i class="fa fa-paperclip" aria-hidden="true"></i> 
+                                                        Save  
+                                                        <!-- <i class="mdi mdi-send ms-2"></i> -->
                                                     </button>
+                                                </div>
                                             </div>
-                                            <div class="btn-group">
-                                                    <button type="button" class="btn btn-primary waves-light waves-effect ">
-                                                        Send  
-                                                        <i class="mdi mdi-send ms-2"></i>
-                                                    </button>
-                                            </div>
-                                        </div>
-                                    </div>
+                                      </div>
+
                                       <div class="card-body">
                                           <div class="d-flex align-items-center mb-4">
                                               <div class="flex-shrink-0 me-3">
@@ -419,31 +417,31 @@
                                           <div class="row">
                                             <div class="col-md-6">
                                                 <div class="mb-3">
-                                                    <label for="example-text-input" class="form-label">Fax Number</label>
+                                                    <label for="example-text-input" class="form-label">Alert Name</label>
                                                     <input class="form-control" type="text" placeholder="Enter Fax Number">
                                                 </div>
                                             </div>
                                             <div class="col-md-6">
                                                 <div class="mb-3">
-                                                    <label for="example-text-input" class="form-label">Select Header</label>
-                                                    <input class="form-control" type="text" placeholder="Enter Fax Number">
+                                                    <label for="example-text-input" class="form-label">Alert Type</label>
+                                                    <select class="form-select">
+                                                        <option>Fax SMS/number Alert</option>
+                                                        <option>Fax Email Alert</option>
+                                                      </select>
                                                 </div>
                                             </div>
                                           </div>
                                           <div class="row">
                                             <div class="col-md-6">
                                                 <div class="mb-3">
-                                                    <label for="example-date-input" class="form-label">Date</label>
-                                                    <input class="form-control" type="date" placeholder="YYYY-MM-DD" id="example-date-input">
+                                                    <label for="example-date-input" class="form-label">Alert Numbers</label>
+                                                    <input class="form-control" type="text" placeholder="Alert Numbers">
                                                 </div>
                                               </div>
                                             <div class="col-md-6">
                                                 <div class="mb-3">
-                                                    <label for="example-date-input" class="form-label">Select Alert</label>
-                                                    <select class="form-select">
-                                                        <option>Fax Email</option>
-                                                        <option>Fax Message</option>
-                                                      </select>
+                                                    <label for="example-date-input" class="form-label">Last Modified</label>
+                                                    <input class="form-control" type="text" placeholder="YYYY-MM-DD-TIME">
                                                   </div>
                                             </div>
                                           </div>
@@ -457,78 +455,14 @@
                                                 </div>
                                             </div>
                                           </div> -->
-                                          <div class="row">
-                                              <div class="col-12">
-                                                  <div class="card">
-                                                      <div class="card-header">
-                                                          <h4 class="card-title">Dropzone</h4>
-                                                          <p class="card-title-desc">DropzoneJS is an open source library
-                                                              that provides drag’n’drop file uploads with image previews.
-                                                          </p>
-                                                      </div>
-                                                      <div class="card-body">
-
-                                                          <div>
-                                                              <form action="#" class="dropzone">
-                                                                  <div class="fallback">
-                                                                      <input name="file" type="file" multiple="multiple">
-                                                                  </div>
-                                                                  <div class="dz-message needsclick">
-                                                                      <div class="mb-3">
-                                                                          <i class="display-4 text-muted bx bx-cloud-upload"></i>
-                                                                      </div>
-
-                                                                      <h5>Drop files here or click to upload.</h5>
-                                                                  </div>
-                                                              </form>
-                                                          </div>
-                                                          <div class="d-flex justify-content-between mt-4">
-                                                              <div class="text-center ">
-                                                                  <button type="button" class="btn btn-primary waves-effect waves-light">Send
-                                                                      Files</button>
-                                                                    </div>
-                                                                <div class="right-side-btns">
-                                                                        <div class="btn-group">
-                                                                                <button type="button" class="btn btn-primary waves-light waves-effect ">
-                                                                                    Attach <i class="fa fa-paperclip" aria-hidden="true"></i> 
-                                                                                </button>
-                                                                        </div>
-                                                                        <div class="btn-group">
-                                                                                <button type="button" class="btn btn-primary waves-light waves-effect ">
-                                                                                    Send  
-                                                                                    <i class="mdi mdi-send ms-2"></i>
-                                                                                </button>
-                                                                        </div>
-                                                                </div>
-                                                            </div>
-                                                      </div>
-                                                  </div>
-                                              </div> <!-- end col -->
-                                          </div> <!-- end row -->
-
-
-
-                                          <div class="row">
-                                              <div class="col-xl-2 col-6">
-                                                  <div class="card">
-                                                      <img class="card-img-top img-fluid" src="assets/images/small/img-3.jpg" alt="Card image cap">
-                                                      <div class="py-2 text-center">
-                                                          <a download="img-3.jpg" href="assets/images/small/img-3.jpg" class="fw-medium">Download</a>
-                                                      </div>
-                                                  </div>
-                                              </div>
-                                              <div class="col-xl-2 col-6">
-                                                  <div class="card">
-                                                      <img class="card-img-top img-fluid" src="assets/images/small/img-4.jpg" alt="Card image cap">
-                                                      <div class="py-2 text-center">
-                                                          <a download="img-4.jpg" href="assets/images/small/img-4.jpg" class="fw-medium">Download</a>
-                                                      </div>
-                                                  </div>
-                                              </div>
-                                          </div>
-                                          <a href="javascript: void(0);" class="btn btn-secondary waves-effect mt-4"><i class="mdi mdi-reply me-1"></i> Reply</a>
+                                          <div class="right-side-btns d-flex justify-content-end">
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-primary waves-light waves-effect ">
+                                                    Save
+                                                </button>
+                                            </div>
+                                        </div>
                                       </div>
-
                                   </div>
                               </div>
                               <!-- card -->

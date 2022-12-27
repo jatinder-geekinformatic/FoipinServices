@@ -37,7 +37,7 @@
 <body data-layout="horizontal">
 
     <!-- Begin page -->
-    <div id="layout-wrapper">
+    <div id="layout-wrapper" class="outbox-wrapper">
 
         <header id="page-topbar">
             <div class="navbar-header">
@@ -328,7 +328,7 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                <h4 class="mb-sm-0 main_heading">Fax Inbox</h4>
+                                <h4 class="mb-sm-0 main_heading">Fax Sentbox</h4>
 
                                 <div class="page-title-right">
                                     <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
@@ -338,7 +338,7 @@
 
                                         <input type="radio" class="btn-check" name="btnradio" id="btnradio5"
                                             autocomplete="on" checked>
-                                        <a href="inbox.html" class="btn btn-outline-success" for="btnradio5">Inbox
+                                        <a href="outbox.html" class="btn btn-outline-success" for="btnradio5">Outbox
                                             View</a>
                                     </div>
                                 </div>
@@ -358,7 +358,6 @@
                     <div class="row">
                         <div class="col-12">
                             <!-- Left sidebar -->
-
                             <div class="email-leftbar card">
                                 <a href="compose.html" class="compose_link"> <button type="button"
                                         class="btn btn-danger w-100 waves-effect waves-light" data-bs-toggle="modal"
@@ -366,37 +365,32 @@
                                         Compose
                                     </button></a>
                                 <div class="mail-list mt-4">
-                                    <a href="#" class="active"><i class="mdi mdi-email-outline me-2"></i> Inbox <span
+                                    <a href="inbox.html"><i class="mdi mdi-email-outline me-2"></i> Inbox <span
                                             class="ms-1 float-end">(18)</span></a>
                                     <ul class="mail-sub">
                                         <a href="outbox.html"><i class="mdi mdi-email-check-outline me-2"></i>Oubox</a>
-                                        <a href="important.html"><i class="fa fa-exclamation-circle me-2"></i>Important</a>
-                                        <a href="sentbox.html"><i class="mdi mdi-email-send-outline me-2"></i>Sent Faxes</a>
+                                        <a  href="important.html"><i class="fa fa-exclamation-circle me-2"></i>Important</a>
+                                        <a class="active" href="sentbox.html"><i class="mdi mdi-email-send-outline me-2"></i>Sent Faxes</a>
                                         <a href="trash.html"><i class="mdi mdi-trash-can-outline me-2"></i>Trash</a>
                                     </ul>
                                 </div>
                                 <h6 class="mt-4">Settings</h6>
                                 <div class="mail-list mt-2">
                                     <ul class="mail-sub">
-                                        <a href="faxcover.html"><i class="mdi mdi mdi-file-outline me-2"></i>Fax Covers</a>
-                                        <a href="alert.html"><i class="mdi mdi mdi-alert-outline me-2"></i>Fax Alerts</a>
-                                        <a href="faxheader.html"><i class="mdi mdi mdi-file-outline me-2"></i>Fax Headers</a>
-                                        <a href="blacklist.html"><i class="fa fa-ban me-2" aria-hidden="true"></i>Fax Blacklist</a>
+                                        <a href="#"><i class="mdi mdi mdi-file-outline me-2"></i>Fax Covers</a>
+                                        <a href="#"><i class="mdi mdi mdi-alert-outline me-2"></i>Fax Alerts</a>
+                                        <a href="#"><i class="fa fa-ban me-2" aria-hidden="true"></i>Fax Blacklist</a>
                                     </ul>
                                 </div>
-
                             </div>
 
                             <!-- End Left sidebar -->
 
-
                             <!-- Right Sidebar -->
                             <div class="email-rightbar mb-3">
-
                                 <div class="card">
                                     <div class="btn-toolbar gap-2 p-3 d-flex justify-content-between" role="toolbar">
                                         <div class="">
-
                                             <div class="btn-group">
                                                 <button type="button"
                                                     class="btn btn-primary waves-light waves-effect"><i
@@ -465,9 +459,8 @@
                                                         <label for="chk19" class="toggle"></label> 
                                                 </div>
                                                 <span class="star-toggle far fa-star"></span>
-                                                <a href="read-mail.html" class="title ">
-                                                    
-                                                    <span class="senderName">Peter</span>
+                                                <a href="read-mail.html" class="title "> 
+                                                    <span class="senderName">To: Peter</span>
                                                     <span class="ms-2"> <i class="mdi mdi-fax me-1"></i>555-123-4567</span>
                                                 </a>
                                             </div>
@@ -488,7 +481,7 @@
                                             </div>
                                             <span class="star-toggle far fa-star"></span>
                                                 <a href="read-mail.html" class="title">
-                                                    <span class="senderName">Susanna </span>
+                                                    <span class="senderName">To: Susanna </span>
                                                     <span class="ms-2"> <i class="mdi mdi-fax me-1"></i>555-123-4567</span>
                                                 </a>
                                             </div>
